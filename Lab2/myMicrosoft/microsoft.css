@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.arrow{
+    height: 16px;
+    width: 16px;
+    margin-top: 22px;
+    margin-left: 0;
+}
+
+#search {
+    margin-top: 15px;
+    margin-left: 0;
+    height: 24px;
+    width: 24px;
+}
+#acc {
+    height: 32px;
+    width: 32px;
+    margin-top: 10px;
+    margin-left: 0;
+}
+#logo {
+    height: 23px;
+    width: 108px;
+    margin-top: 14px;
+    margin-left: 18px;
+    margin-right: 17px;
+}
+.column {
+    flex-direction: column;
+}
+
+header {
+    height: 54px;
+    padding-left: 56px;
+    padding-right: 56px;
+    justify-content: space-between;
+}
+
+.nav-link {
+    border: 1px solid transparent;
+    color: #262626;
+    padding: 16px 8px 10px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.nav-link:hover, button:hover {
+    text-decoration: underline;
+}
+
+.main {
+    background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP5-1920x600");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 32vw;
+    align-items: center;
+}
+
+.text-block {
+    color: white;
+    max-width: 300px;
+    margin-left: 80px;
+}
+
+.text-block h1 {
+    font-size: 1.8125rem;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.text-block h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.text-block button {
+    background-color: #0067F5;
+    border-style: none;
+    padding: 10px 12px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.grid {
+    padding: 40px;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    width: calc(100% / 4);
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 16px;
+
+}
+
+.card h2{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.card h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: calc(100% / 3);
+    }
+    .text-block h1 {
+        font-size: 16px;
+    }
+
+    .text-block h5 {
+        font-size: 14px;
+    }
+}
+
+.button {
+    border: none;
+    background-color: white;
+    padding-right: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #0067b8;
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: calc(100% / 2);
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}
+
